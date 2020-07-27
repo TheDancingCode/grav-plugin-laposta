@@ -1,0 +1,38 @@
+name: Laposta
+version: 0.1.0
+description: Adds a Laposta subscription action to your forms
+icon: address-card
+author:
+  name: Thomas Vantuycom
+  email: thomasvantuycom@protonmail.com
+homepage: https://github.com/TheDancingCode/grav-plugin-laposta
+keywords: grav, plugin, laposta, newsletter
+bugs: https://github.com/TheDancingCode/grav-plugin-laposta/issues
+docs: https://github.com/TheDancingCode/grav-plugin-laposta/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    api_key:
+      type: text
+      label: PLUGIN_LAPOSTA.API_KEY
+      validate:
+        required: true
+    default_list_id:
+      type: text
+      label: PLUGIN_LAPOSTA.DEFAULT_LIST_ID
+      help: PLUGIN_LAPOSTA.DEFAULT_LIST_ID_HELP

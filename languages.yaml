@@ -1,0 +1,12 @@
+en:
+  PLUGIN_LAPOSTA:
+    API_KEY: API key
+    DEFAULT_LIST_ID: Default list ID
+    DEFAULT_LIST_ID_HELP: List subscribers will be added to when no list is specified in the form definition
+    ERROR_MESSAGE: Something went wrong. Please try again later.
+nl:
+  PLUGIN_LAPOSTA:
+    API_KEY: API key
+    DEFAULT_LIST_ID: Standaard lijst ID
+    DEFAULT_LIST_ID_HELP: Lijst waaraan relaties worden toegevoegd wanneer geen lijst bepaald wordt in de configuratie van het formulier
+    ERROR_MESSAGE: Er liep iets mis. Probeer het later opnieuw.
