@@ -1,6 +1,6 @@
 # Laposta Plugin
 
-The **Laposta** Plugin is an extension for [Grav CMS](http://github.com/getgrav/grav) that adds a Laposta subscription action to your forms?
+The **Laposta** Plugin is an extension for [Grav CMS](http://github.com/getgrav/grav) that adds a Laposta subscription action to your forms.
 
 ## Installation
 
