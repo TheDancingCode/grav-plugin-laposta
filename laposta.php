@@ -2,14 +2,12 @@
 
 namespace Grav\Plugin;
 
-require_once(__DIR__ . "/vendor/laposta/laposta-api-php/lib/Laposta.php");
-
 use Composer\Autoload\ClassLoader;
 use Grav\Common\Plugin;
 use RocketTheme\Toolbox\Event\Event;
-use \Laposta;
-use \Laposta_Member;
-use \Laposta_Error;
+use Laposta;
+use Laposta_Member;
+use Laposta_Error;
 
 /**
  * Class LapostaPlugin
@@ -30,8 +28,10 @@ class LapostaPlugin extends Plugin
     public static function getSubscribedEvents()
     {
         return [
-            ['autoload', 100000], // TODO: Remove when plugin requires Grav >=1.7
-            'onPluginsInitialized' => ['onPluginsInitialized', 0]
+            'onPluginsInitialized' => [
+                ['autoload', 100000],
+                ['onPluginsInitialized', 0]
+            ]
         ];
     }
 
